@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>奇門遁甲・風水命理 | SeerQ 先知命局 東方智慧 × AI 命盤生態</title>
+  <meta name="description" content="結合千年帝王之學奇門遁甲、玄空風水堪輿與八字紫微命理，融合 SeerQ 先知命局 AI 智能排盤與全球實名認證導師，助您掌握時空運籌、商務決策與吉宅佈局。">
+  <meta name="keywords" content="奇門遁甲, 風水, 命理, 八字, 紫微斗數, SeerQ, 先知命局, 九宮飛星, 商務談判, 擇吉開運">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Noto+Serif+TC:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Constellation Layer -->
+  <div class="celestial-bg"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon-box">遁</div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">SeerQ · 先知命局</span>
+          <span class="brand-tag">奇門遁甲・風水堪輿・東方命理</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#hero" class="nav-link">首頁</a></li>
+          <li><a href="#qimen" class="nav-link">奇門遁甲</a></li>
+          <li><a href="#fengshui" class="nav-link">風水堪輿</a></li>
+          <li><a href="#bazi" class="nav-link">八字命理</a></li>
+          <li><a href="#seerq" class="nav-link">認證導師</a></li>
+          <li><a href="#cases" class="nav-link">實戰案例</a></li>
+          <li><a href="#faq" class="nav-link">常見問答</a></li>
+          <li><a href="#booking" class="nav-link">預約諮詢</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://seerq.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+          訪問 SeerQ 官網
+        </a>
+        <a href="#qimen-sim" class="btn btn-primary btn-glow" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
+          即時起局
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="切換選單">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span>✧</span> 東方最高運籌哲學 × AI 命盤生態
+          </div>
+          <h1 class="hero-title">
+            洞悉天機・時空轉運<br>
+            <span class="text-gradient-gold">掌握宏偉人生格局</span>
+          </h1>
+          <p class="hero-lead">
+            承襲千年帝王之學「奇門遁甲」與正統「玄空風水堪輿」，深度融合 <strong>SeerQ 先知命局</strong> 
+            前沿 AI 算法與全球頂尖認證名師，在商務談判、投資進退、居家吉宅與大運抉擇中為您精準布盤，借時空之力乘風破浪。
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#qimen-sim" class="btn btn-primary btn-glow">
+              <span>✦</span> 即刻體驗奇門排盤
+            </a>
+            <a href="#booking" class="btn btn-outline">
+              <span>◈</span> 預約 1 對 1 導師諮詢
+            </a>
+            <a href="https://seerq.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <span>➔</span> 探索 SeerQ 平台
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="99" data-suffix=".2%">99.2%</span>
+              <span class="stat-label">客戶諮詢滿意度</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="58000" data-suffix="+">58,000+</span>
+              <span class="stat-label">AI 命盤分析次數</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="240" data-suffix="+">240+</span>
+              <span class="stat-label">全球實名認證導師</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="luopan-wrapper">
+            <div class="luopan-ring ring-outer"></div>
+            <div class="luopan-ring ring-mid"></div>
+            <div class="luopan-ring ring-inner"></div>
+            <div class="luopan-center">
+              <div class="center-taiji">☯</div>
+              <div class="center-tag">天人合一</div>
+            </div>
+
+            <!-- Floating Astrological Badges -->
+            <div class="floating-badge fb-1">
+              <span>✦</span> 生門逢天任 · 求財大吉
+            </div>
+            <div class="floating-badge fb-2">
+              <span>◈</span> 九紫離火當令 · 名望躍升
+            </div>
+            <div class="floating-badge fb-3">
+              <span>✧</span> 六合臨休門 · 和合安泰
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 奇門遁甲 (Qi Men Dun Jia)
+         ========================================================================== -->
+    <section class="section-qimen" id="qimen">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">帝王之學 · 時空決策最高維度</div>
+          <h2 class="section-title">奇門遁甲 · 運籌帷幄於時空交會</h2>
+          <p class="section-subtitle">
+            「學會奇門遁，來人不用問。」奇門遁甲融天時、地利、人和與神助於一爐，是古代軍師排兵佈陣之法，更是現代商戰與人生決策的至高指南。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- 3 Pillars Grid -->
+        <div class="pillars-grid">
+          <div class="card-pillar">
+            <div class="pillar-icon">♟</div>
+            <h3 class="pillar-title">商務決策與談判運籌</h3>
+            <p class="pillar-desc">
+              在重大投資收購、商業談判與合約簽署中，透過奇門起局選定主客順逆方位。讓您在談判桌上佔據能量高位，轉被動為主動，贏得最優商業條件。
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-item">主客位佈局</span>
+              <span class="tag-item">商業競爭防禦</span>
+              <span class="tag-item">合約吉凶鑑別</span>
+            </div>
+          </div>
+
+          <div class="card-pillar">
+            <div class="pillar-icon">🧭</div>
+            <h3 class="pillar-title">時空擇吉與出行借力</h3>
+            <p class="pillar-desc">
+              天地間每時每刻皆有氣場吉凶方位。求醫問藥、商務出行、競聘應試或重要約會，選取生門、開門吉方借取天時動能，成事如神助。
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-item">吉時吉方出行</span>
+              <span class="tag-item">求財動能借力</span>
+              <span class="tag-item">化解困局煞氣</span>
+            </div>
+          </div>
+
+          <div class="card-pillar">
+            <div class="pillar-icon">📜</div>
+            <h3 class="pillar-title">天盤九星・八門・八神</h3>
+            <p class="pillar-desc">
+              精析天盤天輔、天芮等九星之思想趨向；休生傷杜景死驚開八門之人事進退；值符、太陰、六合八神之隱形能量，全面透析事物全貌。
+            </p>
+            <div class="pillar-tags">
+              <span class="tag-item">八門人事吉凶</span>
+              <span class="tag-item">九星時空氣象</span>
+              <span class="tag-item">八神無形庇佑</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Qi Men Simulator -->
+        <div class="qimen-simulator-box" id="qimen-sim">
+          <div class="simulator-header">
+            <div class="sim-title-group">
+              <h3><span>✦</span> 奇門遁甲即時排盤模擬器</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                點選您所關心的問事面向，系統將根據當前天時盤局進行實時演算法排盤
+              </p>
+            </div>
+            <div class="sim-controls">
+              <select class="select-custom" id="qimenInquirySelect">
+                <option value="wealth">💼 商務求財・大額投資</option>
+                <option value="career">🚀 職場陞遷・事業決策</option>
+                <option value="love">💖 婚戀感情・人際和合</option>
+                <option value="negotiation">🤝 商務談判・合約簽署</option>
+              </select>
+              <button class="btn btn-primary" id="btnGenerateQimen">即刻起局排盤</button>
+            </div>
+          </div>
+
+          <div class="sim-body-grid">
+            <!-- 9 Palace Matrix -->
+            <div>
+              <div style="font-size: 0.82rem; color: var(--gold-light); margin-bottom: 0.6rem; letter-spacing: 0.05em;">
+                ◈ 洛書九宮時空盤（點擊任意宮位可查看宮內詳解）：
+              </div>
+              <div class="jiugong-grid" id="qimenGrid">
+                <!-- Populated via script.js -->
+              </div>
+            </div>
+
+            <!-- AI Divination Insight -->
+            <div class="sim-insight-panel">
+              <div class="insight-card">
+                <div class="insight-header">
+                  <span class="insight-title" id="insightTitle">盤象加載中...</span>
+                  <span class="insight-grade grade-great" id="insightGrade">吉格上選</span>
+                </div>
+                <p class="insight-text" id="insightText">
+                  正在計算天干地支與三奇六儀時空位移...
+                </p>
+                <ul class="insight-tips-list" id="insightTipsList">
+                  <!-- Injected via script.js -->
+                </ul>
+              </div>
+
+              <div style="background: rgba(7, 9, 19, 0.6); border: 1px solid var(--border-gold); border-radius: 8px; padding: 1rem; display: flex; align-items: center; justify-content: space-between;">
+                <div>
+                  <div style="color: #fff; font-size: 0.9rem; font-weight: 600;">需要專家進一步深度拆解盤象？</div>
+                  <div style="color: var(--text-secondary); font-size: 0.8rem;">SeerQ 先知命局提供 1 對 1 私密語音/視訊諮詢</div>
+                </div>
+                <a href="#booking" class="btn btn-outline" style="padding: 0.45rem 1rem; font-size: 0.82rem;">預約解盤</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 風水堪輿 (Feng Shui)
+         ========================================================================== -->
+    <section class="section-fengshui" id="fengshui">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">形氣合一 · 人居環境能量調和</div>
+          <h2 class="section-title">玄空風水堪輿 · 順應天地納氣聚財</h2>
+          <p class="section-subtitle">
+            「氣乘風則散，界水則止。」優良的風水並非迷信，而是環境心理學、電磁場學與自然氣流的極致和諧。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="fengshui-intro-grid">
+          <div>
+            <div class="fs-period-badge">
+              <span>🔥</span> 當前天運：三元九運「九紫離火大運」（2024–2043）
+            </div>
+            <h3 style="font-size: 1.85rem; color: #fff; line-height: 1.35; margin-bottom: 1.25rem;">
+              二十年一輪換的天時大運，<br>
+              <span class="text-gradient-gold">您的居所與辦公環境跟上了嗎？</span>
+            </h3>
+            <p style="color: var(--text-secondary); font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              九紫離火運主宰智慧、文化、身心靈與科技文明。傳統八運佈局若不及時隨天時更迭調整，易出現財氣外洩、思緒倦怠或人事口舌。透過正統玄空九宮飛星佈局，讓空間能量成為全家人與事業的最佳助力。
+            </p>
+
+            <ul class="fs-list">
+              <li class="fs-item">
+                <div class="fs-item-icon">🏠</div>
+                <div>
+                  <h4>陽宅居家風水佈局</h4>
+                  <p>大門玄關納氣口、主臥睡床安穩磁場、廚房灶位健康守護，打造聚財納祥之生旺宅邸。</p>
+                </div>
+              </li>
+              <li class="fs-item">
+                <div class="fs-item-icon">🏢</div>
+                <div>
+                  <h4>企業辦公與商業空間</h4>
+                  <p>總裁主管辦公坐向、財務核心重地聚寶局、迎客前台氣流動線，助力商務氣場如日中天。</p>
+                </div>
+              </li>
+              <li class="fs-item">
+                <div class="fs-item-icon">🛡️</div>
+                <div>
+                  <h4>化煞迎吉 · 二黑五黃精準化解</h4>
+                  <p>以金洩土、以木疏水，不破壞既有裝修，運用天然水晶、銅器與動線微調，優雅化煞。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Feng Shui Directional Guide Interactive System -->
+          <div class="fs-tab-system">
+            <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>🧭</span> 九運八方風水吉凶動態指南
+            </h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              切換不同方位，查看當前空間氣場特質與針對性調理佈局方案：
+            </p>
+
+            <div class="fs-tab-nav">
+              <button class="fs-tab-btn active" data-dir="south">正南 (離宮·主旺)</button>
+              <button class="fs-tab-btn" data-dir="north">正北 (坎宮·貴人)</button>
+              <button class="fs-tab-btn" data-dir="northeast">東北 (艮宮·基業)</button>
+              <button class="fs-tab-btn" data-dir="southeast">東南 (巽宮·化煞)</button>
+              <button class="fs-tab-btn" data-dir="northwest">西北 (乾宮·權威)</button>
+            </div>
+
+            <div class="fs-tab-content-area">
+              <div class="fs-detail-box">
+                <h4 id="fsDetailTitle">正南方（離宮 · 當令九紫離火大運主位）</h4>
+                <p id="fsDetailDesc">
+                  2024–2043進入三元九運『九紫離火』大運，南方為天運核心！象徵名望、文明、科技、美麗與靈性思維。此方位吉旺無比，宜保持明亮、整潔，避免堆放雜物污濁。
+                </p>
+                <div class="fs-solution-card">
+                  <div class="fs-solution-title" id="fsSolutionTitle">離火旺運佈局指南：</div>
+                  <div class="fs-solution-desc" id="fsSolutionDesc">
+                    適合擺放紫晶洞、長明紅燈、紅木藝術品或象徵文明名望的獎項證書，強力催旺正緣桃花與事業大運。
+                  </div>
+                </div>
+              </div>
+
+              <div style="text-align: center; background: rgba(7, 9, 19, 0.7); border: 1px solid var(--border-gold); border-radius: 12px; padding: 1.75rem 1rem;">
+                <div style="font-size: 3rem; margin-bottom: 0.5rem;">🏯</div>
+                <div style="color: var(--gold-light); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem;">戶型圖線上風水初勘</div>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                  提供戶型圖或辦公室平面圖，由 SeerQ 認證風水大師遠端標定九宮坐向
+                </p>
+                <a href="#booking" class="btn btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">上傳圖面預約</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 東方命理與八字紫微 (BaZi & Destiny Matrix)
+         ========================================================================== -->
+    <section class="section-bazi" id="bazi">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">知命立命 · 順勢而為</div>
+          <h2 class="section-title">八字四柱與紫微斗數 · 人生導航矩陣</h2>
+          <p class="section-subtitle">
+            命由天定，運由己握。藉由天干地支與紫微星盤的精密解讀，看清先天心性、資源稟賦與大運起伏節奏。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="bazi-cards-grid">
+          <div class="bazi-feature-card">
+            <div class="bazi-icon-circle">☯</div>
+            <h4>四柱八字精批</h4>
+            <p>年月日時四柱天干地支五行生剋制化，辨明十神格局（正官、偏財、傷官、七殺），鎖定核心喜用神。</p>
+          </div>
+
+          <div class="bazi-feature-card">
+            <div class="bazi-icon-circle">📈</div>
+            <h4>大運流年走勢預測</h4>
+            <p>十年一大運，一年一流年。預知順境蓄力一躍沖天，預判低谷守拙防範風險，從容駕馭週期。</p>
+          </div>
+
+          <div class="bazi-feature-card">
+            <div class="bazi-icon-circle">🌌</div>
+            <h4>紫微斗數十二宮位</h4>
+            <p>命宮、身宮、官祿宮、財帛宮、夫妻宮星曜互參，剖析深層潛意識動機與靈魂宿命藍圖。</p>
+          </div>
+
+          <div class="bazi-feature-card">
+            <div class="bazi-icon-circle">🤖</div>
+            <h4>SeerQ AI 智能命盤算法</h4>
+            <p>以千萬級傳統古籍算命演算法與現代大數據交叉驗證，秒級生成高精準度八字體系分析報告。</p>
+          </div>
+        </div>
+
+        <!-- Five Elements Quick Calculator -->
+        <div class="wuxing-quick-widget">
+          <div>
+            <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>⚡</span> 五行生剋初步測算體驗
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+              輸入您的西元出生年份與月份，體驗 SeerQ 智能命盤演算法的基礎五行能量分佈評估：
+            </p>
+            <div style="display: flex; gap: 1rem; margin-bottom: 1.25rem;">
+              <input type="number" class="form-input" id="baziYear" placeholder="出生年份 (如 1992)" value="1992" min="1930" max="2026">
+              <input type="number" class="form-input" id="baziMonth" placeholder="出生月份 (1-12)" value="8" min="1" max="12">
+              <button class="btn btn-primary" id="btnCalcWuxing" style="white-space: nowrap;">測算能量</button>
+            </div>
+            <div id="wuxingSummary" style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; background: rgba(7,9,19,0.7); padding: 0.85rem 1rem; border-radius: 8px; border: 1px solid var(--border-gold);">
+              點擊「測算能量」獲取個人五行初階喜用分析。
+            </div>
+          </div>
+
+          <div class="wuxing-chart-display">
+            <div class="wuxing-pillar">
+              <div class="wuxing-circle el-metal">金</div>
+              <span class="wuxing-val" id="valMetal">20%</span>
+            </div>
+            <div class="wuxing-pillar">
+              <div class="wuxing-circle el-wood">木</div>
+              <span class="wuxing-val" id="valWood">24%</span>
+            </div>
+            <div class="wuxing-pillar">
+              <div class="wuxing-circle el-water">水</div>
+              <span class="wuxing-val" id="valWater">18%</span>
+            </div>
+            <div class="wuxing-pillar">
+              <div class="wuxing-circle el-fire">火</div>
+              <span class="wuxing-val" id="valFire">26%</span>
+            </div>
+            <div class="wuxing-pillar">
+              <div class="wuxing-circle el-earth">土</div>
+              <span class="wuxing-val" id="valEarth">12%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: SeerQ 平台特色與全球認證導師 (SeerQ Mentors & Ecosystem)
+         ========================================================================== -->
+    <section class="section-seerq" id="seerq">
+      <div class="container">
+        <div class="seerq-highlight-banner">
+          <div class="seerq-banner-info">
+            <div class="badge-pill">Global Digital Marketplace & SaaS</div>
+            <h3>SeerQ 先知命局 · 連接全球智慧人生導師</h3>
+            <p>
+              總部位於香港的 <strong>SeerQ（seerq.io）</strong> 透過先進 AI 科技與嚴謹認證體系，建立透明的命理諮詢交易平台。擁有雙向評分機制、資金託管保障與嚴密隱私加密，讓您安心獲取頂級命理諮詢體驗。
+            </p>
+          </div>
+          <div style="display: flex; gap: 1rem;">
+            <a href="https://seerq.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
+              前往 SeerQ 官網 (seerq.io)
+            </a>
+          </div>
+        </div>
+
+        <div class="section-title-wrap">
+          <div class="badge-pill">嚴選名家 · 實名認證</div>
+          <h2 class="section-title">常駐精選命理導師群</h2>
+          <p class="section-subtitle">
+            每位導師皆通過 SeerQ 專業考核、實戰案例審核與用戶口碑驗證，為您提供專屬私密指引。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="mentors-grid">
+          <!-- Mentor 1 -->
+          <div class="mentor-card">
+            <div class="mentor-avatar-box">
+              <span>玄</span>
+              <div class="mentor-verified-badge" title="SeerQ 官方認證">✓</div>
+            </div>
+            <h3 class="mentor-name">玄真道長</h3>
+            <div class="mentor-spec">奇門遁甲運籌 · 商業談判決策</div>
+            <p class="mentor-bio">
+              研習奇門遁甲與陰陽堪輿三十餘載，曾任多家百億級跨國企業幕僚顧問，專精重大投資商戰擇吉與時空佈局。
+            </p>
+            <div class="mentor-stats-row">
+              <div class="m-stat">
+                <span class="m-stat-val">4.99 ★</span>
+                <span class="m-stat-lbl">綜合評分</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">3,800+</span>
+                <span class="m-stat-lbl">服務用戶</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">99.4%</span>
+                <span class="m-stat-lbl">好評滿意率</span>
+              </div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%;">預約諮詢</a>
+          </div>
+
+          <!-- Mentor 2 -->
+          <div class="mentor-card">
+            <div class="mentor-avatar-box">
+              <span>靜</span>
+              <div class="mentor-verified-badge" title="SeerQ 官方認證">✓</div>
+            </div>
+            <h3 class="mentor-name">靜雅大師</h3>
+            <div class="mentor-spec">玄空風水堪輿 · 陽宅環境能量</div>
+            <p class="mentor-bio">
+              香港著名三元玄空風水傳人，精擅九宮飛星佈局與現代建築空間美學結合，擅長以不破壞美觀的極簡手法化煞催財。
+            </p>
+            <div class="mentor-stats-row">
+              <div class="m-stat">
+                <span class="m-stat-val">4.98 ★</span>
+                <span class="m-stat-lbl">綜合評分</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">4,200+</span>
+                <span class="m-stat-lbl">服務用戶</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">99.1%</span>
+                <span class="m-stat-lbl">好評滿意率</span>
+              </div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%;">預約諮詢</a>
+          </div>
+
+          <!-- Mentor 3 -->
+          <div class="mentor-card">
+            <div class="mentor-avatar-box">
+              <span>明</span>
+              <div class="mentor-verified-badge" title="SeerQ 官方認證">✓</div>
+            </div>
+            <h3 class="mentor-name">明徹居士</h3>
+            <div class="mentor-spec">八字子平命理 · 紫微斗數十二宮</div>
+            <p class="mentor-bio">
+              兼具現代心理學背景與正統子平命學，擅長大運流年轉折點分析、天賦優勢挖掘與婚戀子女因緣解析。
+            </p>
+            <div class="mentor-stats-row">
+              <div class="m-stat">
+                <span class="m-stat-val">4.97 ★</span>
+                <span class="m-stat-lbl">綜合評分</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">5,600+</span>
+                <span class="m-stat-lbl">服務用戶</span>
+              </div>
+              <div class="m-stat">
+                <span class="m-stat-val">98.9%</span>
+                <span class="m-stat-lbl">好評滿意率</span>
+              </div>
+            </div>
+            <a href="#booking" class="btn btn-outline" style="width: 100%;">預約諮詢</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 實戰案例見證 (Success Stories & Cases)
+         ========================================================================== -->
+    <section class="section-cases" id="cases" style="padding: 5.5rem 0; background: rgba(10, 13, 28, 0.7);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">真實反饋 · 事實勝於雄辯</div>
+          <h2 class="section-title">實戰案例見證</h2>
+          <p class="section-subtitle">
+            無數企業家、職場菁英與家庭在關鍵轉折點，藉由奇門遁甲與風水命理找到最優破局路徑。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+          <div class="card-pillar" style="padding: 2rem;">
+            <div style="color: var(--gold-light); font-size: 0.82rem; margin-bottom: 0.5rem;">案例一 · 跨境電商併購案</div>
+            <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.75rem;">借奇門離宮吉方，談判逆轉挽回千萬估值</h4>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7;">
+              某科技公司創始人在進行 A 輪股權併購談判前，透過奇門起局發現坐西方驚門受制。經導師指點將談判會議改為面向南方離九宮坐景門迎貴，談判當日氣場大勝，最終順利以原預估價完成融資。
+            </p>
+          </div>
+
+          <div class="card-pillar" style="padding: 2rem;">
+            <div style="color: var(--gold-light); font-size: 0.82rem; margin-bottom: 0.5rem;">案例二 · 總部辦公室風水調度</div>
+            <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.75rem;">化解二黑五黃煞氣，團隊凝聚力與營收雙增長</h4>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7;">
+              某金融集團搬遷新總部後員工頻繁請假、業績低迷。靜雅大師實地勘察發現正東煞星直衝財務室，透過九宮飛星佈局銅器洩煞並將總裁位移至西北乾位，次季度業績逆勢增長 38%。
+            </p>
+          </div>
+
+          <div class="card-pillar" style="padding: 2rem;">
+            <div style="color: var(--gold-light); font-size: 0.82rem; margin-bottom: 0.5rem;">案例三 · 中年職業轉型決策</div>
+            <h4 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.75rem;">八字四柱大運指路，找準天命賽道大獲成功</h4>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.7;">
+              40歲企業高管面臨離職創業迷茫，明徹居士深度排盤發現其八字正印化殺、大運正入離火食傷生財大運，極利自立門戶開拓文化身心靈領域，如今新創公司三年已穩步獲利。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 常見問題 FAQ (Accordion)
+         ========================================================================== -->
+    <section class="section-faq" id="faq">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">解答疑惑 · 科學看待傳統智慧</div>
+          <h2 class="section-title">常見問答 (FAQ)</h2>
+          <p class="section-subtitle">
+            深入了解奇門遁甲、風水與 SeerQ 先知命局服務的運作方式。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>什麼是奇門遁甲？它與一般的八字算命有何本質區別？</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              八字算命側重於解析一個人一生的「先天命運軌跡」與性格喜忌；而奇門遁甲則是「當下時空的決策學與動能運籌」。奇門以特定時間起局，將宇宙天地人神的信息投射在九宮格中，告訴您此時此刻某個事件的吉凶走向，以及朝哪個方位、採取何種行動可以化被動為主動。
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>風水調理佈局一定要砸牆大興土木或擺放誇張法器嗎？</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              完全不需要。正統的高階風水講求「大道至簡、天人合一」。現代玄空風水注重氣流動線、光線明暗、家具坐向微調，以及運用天然五行物品（如純銅製品洩土煞、天然水晶調和磁場、綠植活化生氣），完全能與現代高雅室內設計完美融合。
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>SeerQ 平台的 AI 命盤測算與真人導師如何協同配合？</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              SeerQ 採用「AI 智能初勘 + 真人導師深層解惑」雙軌模式。AI 大模型依據傳統數千卷古籍排盤演算法，能在秒級內完成無誤差的排盤與全局客觀掃描；隨後由具備數十年實戰經驗的真人認證導師，針對您的個性化困境進行深度同理心剖析與私密指導。
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>遠端線上看風水和奇門排盤，準確度會有影響嗎？</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              奇門遁甲起局是以問事當下的時間時空為基準，與物理距離無關，因此線上遠端起局準確度毫不受影響。在風水方面，只要提供準確的房屋平面圖、坐向度數及室內外周遭影片照片，導師即可進行精密的九宮飛星落盤。
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>我的諮詢紀錄和生辰八字個人隱私會受到保護嗎？</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              SeerQ 平台總部位於香港，嚴格遵循國際數據隱私保護法規。用戶的生辰八字與諮詢紀錄皆經過高等級端到端加密，諮詢內容完全私密，未經授權絕不外洩。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section: 預約諮詢 (Booking Consultation)
+         ========================================================================== -->
+    <section class="section-booking" id="booking">
+      <div class="container">
+        <div class="section-title-wrap">
+          <div class="badge-pill">專屬私密指引 · 開啟順行人生</div>
+          <h2 class="section-title">預約專家深度諮詢</h2>
+          <p class="section-subtitle">
+            填寫下方資訊，SeerQ 先知命局服務秘書將在 24 小時內與您聯繫，為您安排合適的認證名師時段。
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="booking-wrapper">
+          <form class="booking-form" id="bookingForm">
+            <div>
+              <label class="form-label" for="bookName">您的稱呼 / 姓名 *</label>
+              <input type="text" class="form-input" id="bookName" placeholder="例如：陳先生 / 王女士" required>
+            </div>
+
+            <div>
+              <label class="form-label" for="bookPhone">聯絡電話 / WhatsApp *</label>
+              <input type="tel" class="form-input" id="bookPhone" placeholder="+852 / +886 / 聯絡方式" required>
+            </div>
+
+            <div>
+              <label class="form-label" for="bookService">諮詢項目類別 *</label>
+              <select class="form-select" id="bookService">
+                <option value="奇門遁甲商務談判運籌">♟ 奇門遁甲商務談判運籌</option>
+                <option value="陽宅居家/辦公室風水勘測">🏠 陽宅居家/辦公室風水勘測</option>
+                <option value="四柱八字流年與天賦精批">☯ 四柱八字流年與天賦精批</option>
+                <option value="紫微斗數十二宮深度解析">🌌 紫微斗數十二宮深度解析</option>
+                <option value="重大決策出行時空擇吉">🧭 重大決策出行時空擇吉</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="form-label" for="bookMode">諮詢方式偏好 *</label>
+              <select class="form-select" id="bookMode">
+                <option value="1對1 線上視訊/語音諮詢">📹 1對1 線上視訊/語音諮詢 (推薦)</option>
+                <option value="線下實地勘測 (需預約)">📍 線下實地勘測 (需預約安排)</option>
+                <option value="AI 智慧排盤詳細報告">📄 AI 智慧排盤詳細報告</option>
+              </select>
+            </div>
+
+            <div class="form-group-full">
+              <label class="form-label" for="bookMessage">想請教的事項或當前困惑（選填）</label>
+              <textarea class="form-textarea" id="bookMessage" placeholder="簡述您的問題（如：近期有合約簽署需選吉方、搬遷新辦公室風水規劃、或職場轉型大運抉擇等）"></textarea>
+            </div>
+
+            <div class="form-feedback" id="formFeedback"></div>
+
+            <div class="form-group-full" style="text-align: center; margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary btn-glow" style="padding: 0.85rem 3rem; font-size: 1.05rem;">
+                確認送出預約
+              </button>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem;">
+                🔒 SeerQ 平台承諾保障用戶個人數據與對話隱私安全
+              </p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <div class="brand-icon-box" style="width: 36px; height: 36px; font-size: 1.1rem;">遁</div>
+            <span style="font-size: 1.2rem; font-weight: 700; color: #fff;">SeerQ · 先知命局</span>
+          </div>
+          <p>
+            全球數位化人生導師與命理科技平台。承襲東方數千年易經八卦、奇門遁甲與玄空風水精髓，以現代科技讓傳統智慧啟迪當代人生。
+          </p>
+          <div style="margin-top: 1.25rem;">
+            <a href="https://seerq.io/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.4rem 0.85rem; font-size: 0.8rem;">
+              訪問 SeerQ 官方平台 (seerq.io) ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>核心服務</h5>
+          <ul class="footer-links">
+            <li><a href="#qimen">奇門遁甲排盤</a></li>
+            <li><a href="#fengshui">玄空風水堪輿</a></li>
+            <li><a href="#bazi">八字四柱命理</a></li>
+            <li><a href="#bazi">紫微斗數批命</a></li>
+            <li><a href="#qimen-sim">時空擇吉起局</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>平台與資源</h5>
+          <ul class="footer-links">
+            <li><a href="https://seerq.io/" target="_blank" rel="noopener noreferrer">SeerQ 官方網站 (seerq.io)</a></li>
+            <li><a href="https://github.com/waiyanchan0519/mynewproject" target="_blank" rel="noopener noreferrer">GitHub 開源專案倉庫</a></li>
+            <li><a href="#seerq">全球認證導師招募</a></li>
+            <li><a href="#cases">客戶實戰見證</a></li>
+            <li><a href="#faq">命理百科常識</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>聯絡與支持</h5>
+          <ul class="footer-links">
+            <li><a href="#booking">預約專家諮詢</a></li>
+            <li><a href="mailto:support@seerq.io">support@seerq.io</a></li>
+            <li><a href="https://seerq.io/" target="_blank" rel="noopener noreferrer">iOS / Android App 下載</a></li>
+            <li><span style="color: var(--text-muted); font-size: 0.82rem;">總部：中國香港特別行政區</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 SeerQ (先知命局). All rights reserved. 傳統東方命理與風水為文化哲學傳承，人生抉擇請保持客觀理性。
+        </div>
+        <div class="footer-bottom-links">
+          <a href="https://seerq.io/" target="_blank" rel="noopener noreferrer">SeerQ 官網</a>
+          <a href="https://github.com/waiyanchan0519/mynewproject" target="_blank" rel="noopener noreferrer">GitHub: waiyanchan0519/mynewproject</a>
+          <a href="#hero">回到頂部 ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
